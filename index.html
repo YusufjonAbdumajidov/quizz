@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>YES or NO</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div id="start">Start Quiz</div>
+        <div id="quiz" class="quiz" style="display: none;">
+            <div class="top-container">
+                <div class="timer">
+                    <div id="counter"></div>
+                    <div id="btimeGauge"></div>
+                    <div id="timeGauge"></div>
+                </div>
+                <div id="question"></div>
+                <div id="pic"></div>
+            </div>
+            <div class="bottom-container">
+                <div id="choices">
+                    <button class="choiceA" id="A"  onclick="checkAnswer('A')"></button>
+                    <button class="choiceB" id="B" onclick="checkAnswer('B')"></button>
+                </div>
+            <div id="progress" class="progress"></div>
+            </div>  
+        </div>
+       <div id="scoreContainer" class="scoreContainer" style="display: none;">
+           
+       </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
